@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Asteroid" representedClassName=".Asteroid" syncable="YES" codeGenerationType="class">
+        <attribute name="absoluteMagnitudeH" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="closeApproachDate" optional="YES" attributeType="String"/>
+        <attribute name="estimatedDiameter" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isHazardous" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="missDistance" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="relativeVelocity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="News" representedClassName=".News" syncable="YES" codeGenerationType="class">
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="pubDate" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="title"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="Asteroid" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="News" positionX="-45" positionY="63" width="128" height="74"/>
+    </elements>
+</model>

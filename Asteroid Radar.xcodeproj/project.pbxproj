@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6900C7F294311FF0062FD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6900C7E294311FF0062FD05 /* AppDelegate.swift */; };
+		A6900C81294311FF0062FD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6900C80294311FF0062FD05 /* SceneDelegate.swift */; };
+		A6900C8B294312000062FD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6900C8A294312000062FD05 /* Assets.xcassets */; };
+		A6900C8E294312000062FD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6900C8C294312000062FD05 /* LaunchScreen.storyboard */; };
+		A6900C982946F2FF0062FD05 /* ResponseNeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6900C972946F2FF0062FD05 /* ResponseNeo.swift */; };
+		A6900C9A294B0A360062FD05 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6900C99294B0A360062FD05 /* MainViewController.swift */; };
+		A6900C9C294B29150062FD05 /* ClientNASA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6900C9B294B29150062FD05 /* ClientNASA.swift */; };
+		A6900C9E294DC7190062FD05 /* ResponseApod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6900C9D294DC7190062FD05 /* ResponseApod.swift */; };
+		A6900CA3294DCA9B0062FD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6900CA2294DCA9B0062FD05 /* Main.storyboard */; };
+		A69569FD2A7F8BC00061F05C /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69569FC2A7F8BC00061F05C /* NewsData.swift */; };
+		A69569FF2A7F98290061F05C /* NewsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69569FE2A7F98290061F05C /* NewsParser.swift */; };
+		A6956A012A80AE830061F05C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6956A002A80AE820061F05C /* NewsViewController.swift */; };
+		A6956A032A821C570061F05C /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6956A022A821C560061F05C /* NewsViewCell.swift */; };
+		A6956A052A854BDC0061F05C /* ApproachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6956A042A854BDB0061F05C /* ApproachViewController.swift */; };
+		A69CDD44294F1F7000BF3376 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CDD43294F1F7000BF3376 /* UIViewController+Extension.swift */; };
+		A69CDD4629629D8F00BF3376 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69CDD4529629D8F00BF3376 /* DataController.swift */; };
+		E13EC78E29C98CE4004B8300 /* Asteroid_Radar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E13EC78C29C98CE4004B8300 /* Asteroid_Radar.xcdatamodeld */; };
+		E14060102A93470700C7549C /* ApproachViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140600F2A93470700C7549C /* ApproachViewCell.swift */; };
+		E14060122A93475F00C7549C /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14060112A93475F00C7549C /* DetailViewCell.swift */; };
+		E141C6BF296D3FCF0013C58B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E141C6BE296D3FCF0013C58B /* DetailViewController.swift */; };
+		E143F4CE29C5AA8F000CFE46 /* ResponseAsteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E143F4CD29C5AA8F000CFE46 /* ResponseAsteroid.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6900C7B294311FF0062FD05 /* Asteroid Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asteroid Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6900C7E294311FF0062FD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6900C80294311FF0062FD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6900C8A294312000062FD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Asteroid Radar/View/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		A6900C8D294312000062FD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6900C8F294312000062FD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6900C972946F2FF0062FD05 /* ResponseNeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNeo.swift; sourceTree = "<group>"; };
+		A6900C99294B0A360062FD05 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A6900C9B294B29150062FD05 /* ClientNASA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientNASA.swift; sourceTree = "<group>"; };
+		A6900C9D294DC7190062FD05 /* ResponseApod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseApod.swift; sourceTree = "<group>"; };
+		A6900CA2294DCA9B0062FD05 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Asteroid Radar/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		A69569FC2A7F8BC00061F05C /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		A69569FE2A7F98290061F05C /* NewsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsParser.swift; sourceTree = "<group>"; };
+		A6956A002A80AE820061F05C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A6956A022A821C560061F05C /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
+		A6956A042A854BDB0061F05C /* ApproachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproachViewController.swift; sourceTree = "<group>"; };
+		A69CDD43294F1F7000BF3376 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A69CDD4529629D8F00BF3376 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		E13EC78D29C98CE4004B8300 /* Asteroid_Radar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Asteroid_Radar.xcdatamodel; sourceTree = "<group>"; };
+		E140600F2A93470700C7549C /* ApproachViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproachViewCell.swift; sourceTree = "<group>"; };
+		E14060112A93475F00C7549C /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		E141C6BE296D3FCF0013C58B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E143F4CD29C5AA8F000CFE46 /* ResponseAsteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAsteroid.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6900C78294311FF0062FD05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6900C72294311FF0062FD05 = {
+			isa = PBXGroup;
+			children = (
+				A6900C7D294311FF0062FD05 /* Asteroid Radar */,
+				A6900C7C294311FF0062FD05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6900C7C294311FF0062FD05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6900C7B294311FF0062FD05 /* Asteroid Radar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6900C7D294311FF0062FD05 /* Asteroid Radar */ = {
+			isa = PBXGroup;
+			children = (
+				A6900C7E294311FF0062FD05 /* AppDelegate.swift */,
+				A6900C80294311FF0062FD05 /* SceneDelegate.swift */,
+				A6900C9B294B29150062FD05 /* ClientNASA.swift */,
+				A6900C8F294312000062FD05 /* Info.plist */,
+				A6900CA1294DC8140062FD05 /* View */,
+				A6900C9F294DC7990062FD05 /* Model */,
+				A6900CA0294DC7CD0062FD05 /* Controller */,
+			);
+			path = "Asteroid Radar";
+			sourceTree = "<group>";
+		};
+		A6900C9F294DC7990062FD05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E13EC78C29C98CE4004B8300 /* Asteroid_Radar.xcdatamodeld */,
+				A6900C972946F2FF0062FD05 /* ResponseNeo.swift */,
+				A6900C9D294DC7190062FD05 /* ResponseApod.swift */,
+				E143F4CD29C5AA8F000CFE46 /* ResponseAsteroid.swift */,
+				A69569FC2A7F8BC00061F05C /* NewsData.swift */,
+				A69569FE2A7F98290061F05C /* NewsParser.swift */,
+				A69CDD4529629D8F00BF3376 /* DataController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6900CA0294DC7CD0062FD05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6900C99294B0A360062FD05 /* MainViewController.swift */,
+				A69CDD43294F1F7000BF3376 /* UIViewController+Extension.swift */,
+				E141C6BE296D3FCF0013C58B /* DetailViewController.swift */,
+				A6956A002A80AE820061F05C /* NewsViewController.swift */,
+				A6956A042A854BDB0061F05C /* ApproachViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6900CA1294DC8140062FD05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6900CA2294DCA9B0062FD05 /* Main.storyboard */,
+				E14060112A93475F00C7549C /* DetailViewCell.swift */,
+				A6900C8A294312000062FD05 /* Assets.xcassets */,
+				A6900C8C294312000062FD05 /* LaunchScreen.storyboard */,
+				A6956A022A821C560061F05C /* NewsViewCell.swift */,
+				E140600F2A93470700C7549C /* ApproachViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6900C7A294311FF0062FD05 /* Asteroid Radar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6900C92294312000062FD05 /* Build configuration list for PBXNativeTarget "Asteroid Radar" */;
+			buildPhases = (
+				A6900C77294311FF0062FD05 /* Sources */,
+				A6900C78294311FF0062FD05 /* Frameworks */,
+				A6900C79294311FF0062FD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Asteroid Radar";
+			productName = "Asteroid Radar";
+			productReference = A6900C7B294311FF0062FD05 /* Asteroid Radar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6900C73294311FF0062FD05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A6900C7A294311FF0062FD05 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = A6900C76294311FF0062FD05 /* Build configuration list for PBXProject "Asteroid Radar" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6900C72294311FF0062FD05;
+			productRefGroup = A6900C7C294311FF0062FD05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6900C7A294311FF0062FD05 /* Asteroid Radar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6900C79294311FF0062FD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6900C8E294312000062FD05 /* LaunchScreen.storyboard in Resources */,
+				A6900C8B294312000062FD05 /* Assets.xcassets in Resources */,
+				A6900CA3294DCA9B0062FD05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6900C77294311FF0062FD05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69CDD44294F1F7000BF3376 /* UIViewController+Extension.swift in Sources */,
+				A6900C9C294B29150062FD05 /* ClientNASA.swift in Sources */,
+				A6900C7F294311FF0062FD05 /* AppDelegate.swift in Sources */,
+				A6900C81294311FF0062FD05 /* SceneDelegate.swift in Sources */,
+				A6956A052A854BDC0061F05C /* ApproachViewController.swift in Sources */,
+				A69CDD4629629D8F00BF3376 /* DataController.swift in Sources */,
+				A6900C9E294DC7190062FD05 /* ResponseApod.swift in Sources */,
+				E141C6BF296D3FCF0013C58B /* DetailViewController.swift in Sources */,
+				A69569FF2A7F98290061F05C /* NewsParser.swift in Sources */,
+				A6900C982946F2FF0062FD05 /* ResponseNeo.swift in Sources */,
+				E143F4CE29C5AA8F000CFE46 /* ResponseAsteroid.swift in Sources */,
+				A6900C9A294B0A360062FD05 /* MainViewController.swift in Sources */,
+				A6956A012A80AE830061F05C /* NewsViewController.swift in Sources */,
+				E14060102A93470700C7549C /* ApproachViewCell.swift in Sources */,
+				A6956A032A821C570061F05C /* NewsViewCell.swift in Sources */,
+				A69569FD2A7F8BC00061F05C /* NewsData.swift in Sources */,
+				E14060122A93475F00C7549C /* DetailViewCell.swift in Sources */,
+				E13EC78E29C98CE4004B8300 /* Asteroid_Radar.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6900C8C294312000062FD05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6900C8D294312000062FD05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6900C90294312000062FD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6900C91294312000062FD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6900C93294312000062FD05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD89LGBX9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Asteroid Radar/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Asteroid Radar";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MA.Asteroid-Radar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6900C94294312000062FD05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XD89LGBX9K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Asteroid Radar/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Asteroid Radar";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MA.Asteroid-Radar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6900C76294311FF0062FD05 /* Build configuration list for PBXProject "Asteroid Radar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6900C90294312000062FD05 /* Debug */,
+				A6900C91294312000062FD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6900C92294312000062FD05 /* Build configuration list for PBXNativeTarget "Asteroid Radar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6900C93294312000062FD05 /* Debug */,
+				A6900C94294312000062FD05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E13EC78C29C98CE4004B8300 /* Asteroid_Radar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E13EC78D29C98CE4004B8300 /* Asteroid_Radar.xcdatamodel */,
+			);
+			currentVersion = E13EC78D29C98CE4004B8300 /* Asteroid_Radar.xcdatamodel */;
+			path = Asteroid_Radar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6900C73294311FF0062FD05 /* Project object */;
+}

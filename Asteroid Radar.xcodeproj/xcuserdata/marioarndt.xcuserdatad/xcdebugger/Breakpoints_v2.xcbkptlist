@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F73D123A-070D-47F2-B35F-69EF293F9528"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96C158B9-8D70-4F2D-8E9A-248FE7C470A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Asteroid Radar/Controller/DetailViewController.swift"
+            startingColumnNumber = "9"
+            endingColumnNumber = "9"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "detailTable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

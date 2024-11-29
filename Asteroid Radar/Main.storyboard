@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aGD-2O-t5K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ga-yN-lwA">
+            <objects>
+                <navigationController id="aGD-2O-t5K" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ynp-ab-1hU">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Uab-qj-K09"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUv-BE-Hcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1406" y="-70"/>
+        </scene>
+        <!--Asteroid Radar-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="Asteroid_Radar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zny-2s-Lpy">
+                                <rect key="frame" x="0.0" y="300" width="414" height="562"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Asteroid Cell" textLabel="BZd-Bq-byW" detailTextLabel="dTW-mJ-Wdj" style="IBUITableViewCellStyleSubtitle" id="j2o-dH-bKJ">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j2o-dH-bKJ" id="kfN-Xe-AaA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BZd-Bq-byW">
+                                                    <rect key="frame" x="20" y="6" width="27" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dTW-mJ-Wdj">
+                                                    <rect key="frame" x="20" y="22.5" width="44.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZoA-sE-jUL">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-9e-vdr">
+                                <rect key="frame" x="0.0" y="92" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="m16-EV-3ix"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOe-Q7-Pp4" userLabel="Title">
+                                <rect key="frame" x="0.0" y="262" width="414" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20478062913907286" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bEm-IR-MEf"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15103678796482778" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GH1-9e-vdr" firstAttribute="leading" secondItem="MOe-Q7-Pp4" secondAttribute="leading" id="0Ve-mA-NF5"/>
+                            <constraint firstItem="GH1-9e-vdr" firstAttribute="trailing" secondItem="MOe-Q7-Pp4" secondAttribute="trailing" id="FYM-qq-NfT"/>
+                            <constraint firstItem="MOe-Q7-Pp4" firstAttribute="leading" secondItem="Zny-2s-Lpy" secondAttribute="leading" id="Jbz-Ar-DpR"/>
+                            <constraint firstItem="Zny-2s-Lpy" firstAttribute="top" secondItem="GH1-9e-vdr" secondAttribute="bottom" constant="8" symbolic="YES" id="KXE-kZ-g1I"/>
+                            <constraint firstItem="MOe-Q7-Pp4" firstAttribute="trailing" secondItem="Zny-2s-Lpy" secondAttribute="trailing" id="WjK-Q8-wpg"/>
+                            <constraint firstAttribute="trailing" secondItem="GH1-9e-vdr" secondAttribute="trailing" id="bfG-sz-Zfn"/>
+                            <constraint firstItem="Zny-2s-Lpy" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="cC8-X3-64V"/>
+                            <constraint firstItem="GH1-9e-vdr" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="g91-MB-Imi"/>
+                            <constraint firstItem="GH1-9e-vdr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gOM-Wb-iev"/>
+                            <constraint firstItem="Zny-2s-Lpy" firstAttribute="top" secondItem="MOe-Q7-Pp4" secondAttribute="bottom" constant="8" symbolic="YES" id="joK-xH-vA7"/>
+                            <constraint firstItem="MOe-Q7-Pp4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="170" id="qDc-sJ-xQW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asteroid Radar" id="Kqo-zf-bN3" userLabel="Back">
+                        <barButtonItem key="rightBarButtonItem" title="NEWS" style="plain" id="dYA-Ad-pHw">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dms-Yw-Cp5">
+                                <rect key="frame" x="302" y="6" width="92" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="NEWS"/>
+                                <connections>
+                                    <action selector="newsButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fBp-cR-mn8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ZoA-sE-jUL" id="iai-iT-4g9"/>
+                        <outlet property="imageView" destination="GH1-9e-vdr" id="Ouj-uV-8Xv"/>
+                        <outlet property="labelTitle" destination="MOe-Q7-Pp4" id="QIZ-jI-hCf"/>
+                        <outlet property="tableView" destination="Zny-2s-Lpy" id="dZH-YW-9Ed"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-446.37681159420293" y="-70.3125"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="GAu-UX-UCr">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="YZY-vx-PZg" userLabel="Detail View Controller" customClass="DetailViewController" customModule="Asteroid_Radar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RWv-wP-urz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2F9-rB-3F3">
+                                <rect key="frame" x="0.0" y="92" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aZ5-f0-it5"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-0o-evs">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CIl-iW-Qso">
+                                <rect key="frame" x="0.0" y="300" width="414" height="562"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Detail Cell" id="0xz-N3-PMt" customClass="DetailViewCell" customModule="Asteroid_Radar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="44.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0xz-N3-PMt" id="9Na-bW-Tjl" userLabel="Detail View">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="eAR-iX-m8F">
+                                                    <rect key="frame" x="28" y="13" width="358" height="18.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utD-G7-Fvw" userLabel="Content Label">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="18.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2a-6f-jfO" userLabel="Value Label">
+                                                            <rect key="frame" x="318" y="0.0" width="40" height="18.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eAR-iX-m8F" firstAttribute="centerX" secondItem="9Na-bW-Tjl" secondAttribute="centerX" id="0eT-te-Gv2"/>
+                                                <constraint firstItem="eAR-iX-m8F" firstAttribute="top" secondItem="9Na-bW-Tjl" secondAttribute="topMargin" id="4A4-9C-rcV"/>
+                                                <constraint firstItem="eAR-iX-m8F" firstAttribute="leading" secondItem="9Na-bW-Tjl" secondAttribute="leadingMargin" constant="8" id="I0w-3E-fvY"/>
+                                                <constraint firstItem="eAR-iX-m8F" firstAttribute="bottom" secondItem="9Na-bW-Tjl" secondAttribute="bottomMargin" id="uUn-le-GeB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailContentLabel" destination="utD-G7-Fvw" id="NDu-bE-MWC"/>
+                                            <outlet property="detailValueLabel" destination="Q2a-6f-jfO" id="y9g-Tf-70d"/>
+                                            <outlet property="detailView" destination="9Na-bW-Tjl" id="Nub-L6-cUH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EZW-su-4an"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2F9-rB-3F3" firstAttribute="top" secondItem="aZL-0o-evs" secondAttribute="bottom" id="4cc-ha-MX1"/>
+                            <constraint firstItem="CIl-iW-Qso" firstAttribute="top" secondItem="2F9-rB-3F3" secondAttribute="bottom" constant="8" symbolic="YES" id="789-du-ToY"/>
+                            <constraint firstItem="2F9-rB-3F3" firstAttribute="trailing" secondItem="CIl-iW-Qso" secondAttribute="trailing" id="8Q7-09-45K"/>
+                            <constraint firstAttribute="trailing" secondItem="aZL-0o-evs" secondAttribute="trailing" id="KQf-2O-aKN"/>
+                            <constraint firstItem="2F9-rB-3F3" firstAttribute="leading" secondItem="CIl-iW-Qso" secondAttribute="leading" id="OfO-Nl-Xow"/>
+                            <constraint firstItem="aZL-0o-evs" firstAttribute="leading" secondItem="RWv-wP-urz" secondAttribute="leading" id="W2l-t3-lZH"/>
+                            <constraint firstItem="aZL-0o-evs" firstAttribute="top" secondItem="EZW-su-4an" secondAttribute="top" id="e09-le-lwv"/>
+                            <constraint firstItem="aZL-0o-evs" firstAttribute="leading" secondItem="2F9-rB-3F3" secondAttribute="leading" id="ojE-k7-VMV"/>
+                            <constraint firstItem="aZL-0o-evs" firstAttribute="trailing" secondItem="2F9-rB-3F3" secondAttribute="trailing" id="saT-Pl-XfJ"/>
+                            <constraint firstItem="CIl-iW-Qso" firstAttribute="bottom" secondItem="EZW-su-4an" secondAttribute="bottom" id="xDQ-ey-Wdp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asteroid Radar" id="k8z-lv-nvp" userLabel="Back"/>
+                    <connections>
+                        <outlet property="imageView" destination="2F9-rB-3F3" id="etH-hJ-QoH"/>
+                        <outlet property="tableView" destination="CIl-iW-Qso" id="HOi-38-ZEB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jR-9c-I7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="-70.3125"/>
+        </scene>
+        <!--Approach View Controller-->
+        <scene sceneID="xbM-kg-3ds">
+            <objects>
+                <viewController storyboardIdentifier="ApproachViewController" title="DetailViewController" id="lMD-6H-iEq" userLabel="Approach View Controller" customClass="ApproachViewController" customModule="Asteroid_Radar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gyJ-5K-Bfr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xW1-Ex-IXJ">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V4f-Pz-pL0" userLabel="ATable View">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Approach Cell" rowHeight="60" id="o1X-2q-ZuR" userLabel="Approach Cell" customClass="ApproachViewCell" customModule="Asteroid_Radar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o1X-2q-ZuR" id="hrN-ve-Ezh" userLabel="Approach View">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NQD-O8-8cB">
+                                                    <rect key="frame" x="8" y="8" width="398" height="44"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-hU-Im2" userLabel="ApproachDate Stack View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="398" height="14.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5r-KH-62P" userLabel="ApproachDate Content Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="199" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INK-ZI-RoJ" userLabel="ApproachDate ValueLabel">
+                                                                    <rect key="frame" x="199" y="0.0" width="199" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5FW-yc-3pf" userLabel="Distance Stack View">
+                                                            <rect key="frame" x="0.0" y="14.5" width="398" height="15"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9v-or-D2s" userLabel="Distance Content Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="199" height="15"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUb-7n-eQs" userLabel="Distance Value Label">
+                                                                    <rect key="frame" x="199" y="0.0" width="199" height="15"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cBM-wb-t3Y" userLabel="Velocity Stack View">
+                                                            <rect key="frame" x="0.0" y="29.5" width="398" height="14.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwR-ik-x7a" userLabel="Velocity Content Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="199" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1b-hp-0Mn" userLabel="Velocity Value Label">
+                                                                    <rect key="frame" x="199" y="0.0" width="199" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NQD-O8-8cB" firstAttribute="leading" secondItem="hrN-ve-Ezh" secondAttribute="leading" constant="8" id="BX8-qg-co2"/>
+                                                <constraint firstAttribute="bottom" secondItem="NQD-O8-8cB" secondAttribute="bottom" constant="8" id="Fzt-rA-VEs"/>
+                                                <constraint firstItem="NQD-O8-8cB" firstAttribute="top" secondItem="hrN-ve-Ezh" secondAttribute="top" constant="8" id="jE7-s6-1MD"/>
+                                                <constraint firstAttribute="trailing" secondItem="NQD-O8-8cB" secondAttribute="trailing" constant="8" id="su2-8W-5Ih"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="approachDateContentLabel" destination="E5r-KH-62P" id="uH1-yN-NDf"/>
+                                            <outlet property="approachDateValueLabel" destination="INK-ZI-RoJ" id="nZI-w7-IkX"/>
+                                            <outlet property="approachView" destination="hrN-ve-Ezh" id="Qpu-x1-t4z"/>
+                                            <outlet property="distanceContentLabel" destination="K9v-or-D2s" id="Q2E-qe-zW9"/>
+                                            <outlet property="distanceValueLabel" destination="KUb-7n-eQs" id="c2e-94-fbQ"/>
+                                            <outlet property="velocityContentLabel" destination="XwR-ik-x7a" id="1PN-yH-MDQ"/>
+                                            <outlet property="velocityValueLabel" destination="A1b-hp-0Mn" id="VsU-gP-R80"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-l2-abS">
+                                <rect key="frame" x="189" y="430" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jx4-6G-fbj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V4f-Pz-pL0" firstAttribute="trailing" secondItem="Jx4-6G-fbj" secondAttribute="trailing" id="1rL-vb-JKH"/>
+                            <constraint firstItem="V4f-Pz-pL0" firstAttribute="leading" secondItem="Jx4-6G-fbj" secondAttribute="leading" id="8l6-Qx-Uie"/>
+                            <constraint firstItem="xW1-Ex-IXJ" firstAttribute="leading" secondItem="V4f-Pz-pL0" secondAttribute="leading" id="9JE-6C-nMK"/>
+                            <constraint firstItem="V4f-Pz-pL0" firstAttribute="bottom" secondItem="Jx4-6G-fbj" secondAttribute="bottom" id="G6g-jc-A0o"/>
+                            <constraint firstItem="V4f-Pz-pL0" firstAttribute="top" secondItem="xW1-Ex-IXJ" secondAttribute="bottom" id="Ujm-m6-Hct"/>
+                            <constraint firstItem="xW1-Ex-IXJ" firstAttribute="centerX" secondItem="gyJ-5K-Bfr" secondAttribute="centerX" id="cf9-ex-5Uk"/>
+                            <constraint firstItem="V4f-Pz-pL0" firstAttribute="bottom" secondItem="Jx4-6G-fbj" secondAttribute="bottom" id="dZR-ZS-sR0"/>
+                            <constraint firstItem="xW1-Ex-IXJ" firstAttribute="top" secondItem="Jx4-6G-fbj" secondAttribute="top" id="uG9-hX-Woq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asteroid Radar" id="4W0-Vg-PcC" userLabel="Back"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wkG-l2-abS" id="oQb-8d-VLM"/>
+                        <outlet property="tableView" destination="V4f-Pz-pL0" id="Q7F-4u-vUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKZ-zA-IZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="-70.3125"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="Cdy-xg-S3t">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" title="DetailViewController" id="0lk-SY-h4b" userLabel="News View Controller" customClass="NewsViewController" customModule="Asteroid_Radar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N6I-07-fKl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-Vn-FlC">
+                                <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Syy-QE-p2V">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="News Cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="News Cell" rowHeight="100" id="qrY-DF-aKa" userLabel="News Cell" customClass="NewsViewCell" customModule="Asteroid_Radar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qrY-DF-aKa" id="fll-Lz-ytL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdR-KH-0nA">
+                                                    <rect key="frame" x="20" y="13" width="374" height="74"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b6c-0S-RXy">
+                                                            <rect key="frame" x="0.0" y="22" width="43" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="i1f-46-7x8"/>
+                                                                <constraint firstAttribute="width" constant="43" id="rek-T4-AUm"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-kA-uwm">
+                                                            <rect key="frame" x="51" y="0.0" width="323" height="74"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SA-lF-UMN" userLabel="Title Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="323" height="37"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-n4-EDu" userLabel="Date Label">
+                                                                    <rect key="frame" x="0.0" y="37" width="323" height="37"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="gdl-kA-uwm" secondAttribute="bottom" id="dGt-0G-Ytg"/>
+                                                        <constraint firstItem="gdl-kA-uwm" firstAttribute="leading" secondItem="b6c-0S-RXy" secondAttribute="trailing" constant="8" id="jic-j9-CbM"/>
+                                                        <constraint firstItem="b6c-0S-RXy" firstAttribute="leading" secondItem="BdR-KH-0nA" secondAttribute="leading" id="ofK-9y-pes"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gdl-kA-uwm" secondAttribute="trailing" id="qVB-c4-0lk"/>
+                                                        <constraint firstItem="gdl-kA-uwm" firstAttribute="top" secondItem="BdR-KH-0nA" secondAttribute="top" id="saP-zu-eov"/>
+                                                        <constraint firstItem="b6c-0S-RXy" firstAttribute="centerY" secondItem="BdR-KH-0nA" secondAttribute="centerY" id="vNG-9b-M7U"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BdR-KH-0nA" firstAttribute="leading" secondItem="fll-Lz-ytL" secondAttribute="leadingMargin" id="PQB-uV-uC8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BdR-KH-0nA" secondAttribute="bottom" id="llF-uF-eH7"/>
+                                                <constraint firstItem="BdR-KH-0nA" firstAttribute="top" secondItem="fll-Lz-ytL" secondAttribute="topMargin" id="wIR-0N-Edb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BdR-KH-0nA" secondAttribute="trailing" id="x5j-iD-FZC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsDateLabel" destination="hkR-n4-EDu" id="bKQ-RP-Roc"/>
+                                            <outlet property="newsImageView" destination="b6c-0S-RXy" id="QQj-vV-9HK"/>
+                                            <outlet property="newsTitleLabel" destination="2SA-lF-UMN" id="tgx-MG-Rf5"/>
+                                            <outlet property="newsView" destination="BdR-KH-0nA" id="BJM-D6-J8I"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="mzS-bf-Lip">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="865-xx-lp9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Syy-QE-p2V" firstAttribute="top" secondItem="lDg-Vn-FlC" secondAttribute="top" id="0Vm-D1-1ll"/>
+                            <constraint firstItem="Syy-QE-p2V" firstAttribute="trailing" secondItem="lDg-Vn-FlC" secondAttribute="trailing" id="Kpc-Hf-MWD"/>
+                            <constraint firstItem="Syy-QE-p2V" firstAttribute="leading" secondItem="lDg-Vn-FlC" secondAttribute="leading" id="NMB-cr-SiE"/>
+                            <constraint firstItem="lDg-Vn-FlC" firstAttribute="top" secondItem="865-xx-lp9" secondAttribute="top" id="gYE-Vr-lHt"/>
+                            <constraint firstItem="lDg-Vn-FlC" firstAttribute="centerX" secondItem="N6I-07-fKl" secondAttribute="centerX" id="tDg-Js-Pja"/>
+                            <constraint firstItem="Syy-QE-p2V" firstAttribute="leading" secondItem="N6I-07-fKl" secondAttribute="leading" id="xFH-pP-fY6"/>
+                            <constraint firstItem="Syy-QE-p2V" firstAttribute="bottom" secondItem="865-xx-lp9" secondAttribute="bottom" id="yHy-tU-Eih"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Asteroid Radar" id="tks-gi-mfe" userLabel="Back"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="mzS-bf-Lip" id="ALy-Qb-ew8"/>
+                        <outlet property="tableView" destination="Syy-QE-p2V" id="eIx-1k-74W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgl-jO-Ztg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="-70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
